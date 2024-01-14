@@ -6,7 +6,6 @@ CREATE TABLE "DEPARTMENTS" (
      )
 );
 
-SELECT * from "DEPARTMENTS";
 CREATE TABLE "TITLES" (
     "title_id" varchar(5)   NOT NULL,
     "title" text  NOT NULL,
@@ -14,8 +13,6 @@ CREATE TABLE "TITLES" (
         "title_id"
      )
 );
-
-SELECT * from "TITLES";
 
 CREATE TABLE "EMPLOYEES" (
     "emp_no" int   NOT NULL,
@@ -31,8 +28,6 @@ CREATE TABLE "EMPLOYEES" (
     FOREIGN KEY ("emp_title") REFERENCES "TITLES" ("title_id")
 );
 
-SELECT * from "EMPLOYEES";
-
 CREATE TABLE "DEPT_EMP" (
     "emp_no" int   NOT NULL,
     "dept_no" text   NOT NULL,
@@ -43,8 +38,6 @@ CREATE TABLE "DEPT_EMP" (
     FOREIGN KEY ("emp_no") REFERENCES "EMPLOYEES" ("emp_no"),
     FOREIGN KEY ("dept_no") REFERENCES "DEPARTMENTS" ("dept_no")
 );
-
-
 
 CREATE TABLE "DEPT_MANAGER" (
     "dept_no" text   NOT NULL,
@@ -66,7 +59,6 @@ CREATE TABLE "SALARIES" (
      ),
     FOREIGN KEY ("emp_no") REFERENCES "EMPLOYEES" ("emp_no")
 );
-
 
 ALTER TABLE "DEPT_EMP" ADD CONSTRAINT "fk_DEPT_EMP_emp_no" FOREIGN KEY("emp_no")
 REFERENCES "EMPLOYEES" ("emp_no");
