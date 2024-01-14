@@ -76,6 +76,7 @@ This project consists of a PostgreSQL database schema and analysis queries. The 
 
 ##Database Diagram
 
+[Schema]:https://github.com/MaisieDeGraaf/sql-challenge/blob/main/DBD%20Diagram.png
 
 ##Analysis Queries
 
