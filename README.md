@@ -22,37 +22,53 @@ This project consists of a PostgreSQL database schema and analysis queries. The 
 3. EMPLOYEES
 
 *emp_no (Primary Key)
+
 *emp_title (Foreign Key)
+
 *birth_date
+
 *first_name
+
 *last_name
+
 *sex
+
 *hire_date
 
 4.DEPT_EMP
 
 *emp_no (Foreign Key)
+
 *dept_no (Foreign Key)
+
 *(Composite Primary Key)
 
 5.DEPT_MANAGER
 
 *dept_no (Foreign Key)
+
 *emp_no (Foreign Key)
+
 *(Composite Primary Key)
 
 6.SALARIES
 
 *emp_no (Primary Key) (Foreign Key)
+
 *salary
 
 ###Foreign Key Relationships
 
 *EMPLOYEES.emp_title references TITLES.title_id
+
 *DEPT_EMP.emp_no references EMPLOYEES.emp_no
+
 *DEPT_EMP.dept_no references DEPARTMENTS.dept_no
+
 *DEPT_MANAGER.dept_no references DEPARTMENTS.dept_no
+
 *DEPT_MANAGER.emp_no references EMPLOYEES.emp_no
+
 *SALARIES.emp_no references EMPLOYEES.emp_no
 
 ###Constraints
@@ -103,6 +119,8 @@ The Resources folder contains six Excel files that can be imported into the resp
 
 ##Usage
 
-Execute the sqlchallenge_Schema SQL file to create the database schema.
-Import data from CSV files in the Resources folder.
-Run analysis queries from the sqlchallenge_Analysis file for insights.
+1. Execute the sqlchallenge_Schema SQL file to create the database schema.
+
+2. Import data from CSV files in the Resources folder.
+
+3. Run analysis queries from the sqlchallenge_Analysis file for insights.
