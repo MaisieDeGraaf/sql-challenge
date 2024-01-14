@@ -5,6 +5,7 @@
 
 This project consists of a PostgreSQL database schema and analysis queries. The schema includes tables for managing departments, titles, employees, department employees, department managers, and employee salaries. The analysis queries perform various operations on the data, providing insights into the workforce.
 
+
 ##Database Schema
 
 ###Tables
@@ -74,9 +75,11 @@ This project consists of a PostgreSQL database schema and analysis queries. The 
 ###Constraints
 *pk_DEPARTMENTS, pk_TITLES, pk_EMPLOYEES, pk_DEPT_EMP, pk_DEPT_MANAGER, pk_SALARIES
 
+
 ##Database Diagram
 
 [Schema]: https://github.com/MaisieDeGraaf/sql-challenge/blob/main/DBD%20Diagram.png
+
 
 ##Analysis Queries
 
@@ -114,9 +117,11 @@ List employees in Sales or Development departments.
 
 Count occurrences of each last name in the workforce.
 
+
 ##Resources
 
 The Resources folder contains six Excel files that can be imported into the respective tables once the schema SQL has been executed.
+
 
 ##Usage
 
